@@ -1,0 +1,14 @@
+material TrainSign/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture TrainSign_Diffuse.png
+      }
+    }
+  }
+}

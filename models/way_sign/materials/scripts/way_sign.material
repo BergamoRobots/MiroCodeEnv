@@ -1,0 +1,14 @@
+material WaySign/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WaySign_Diffuse.png
+      }
+    }
+  }
+}

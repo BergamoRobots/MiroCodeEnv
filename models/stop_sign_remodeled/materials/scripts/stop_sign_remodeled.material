@@ -1,0 +1,14 @@
+material StopSignRemodeled/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture StopSignRemodeled_Diffuse.png
+      }
+    }
+  }
+}

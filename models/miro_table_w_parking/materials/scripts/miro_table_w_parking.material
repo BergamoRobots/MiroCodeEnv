@@ -1,0 +1,15 @@
+material miro_table_w_parking/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture table_texture_w_parking.png
+        rotate 90
+      }
+    }
+  }
+}

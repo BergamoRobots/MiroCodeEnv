@@ -1,0 +1,14 @@
+material TreeSign/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture TreeSign_Diffuse.png
+      }
+    }
+  }
+}

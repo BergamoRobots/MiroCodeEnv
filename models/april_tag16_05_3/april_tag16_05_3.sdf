@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="april_tag16_05_3">
+    <static>true</static>
+      <link name="april_tag16_05_3">
+        <collision name="tag-collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.297 0.42 0.00</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="tag-visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.297 0.42 0.00</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://april_tag16_05_3/materials/scripts</uri>
+              <uri>model://april_tag16_05_3/materials/textures</uri>
+              <name>april_tag16_05_3/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+  </model>
+</sdf>

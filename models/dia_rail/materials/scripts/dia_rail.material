@@ -1,0 +1,17 @@
+material dia_rail/Diffuse
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture rail.jpg
+				filtering anistropic
+				max_anisotropy 8
+				scale 1 1
+			}
+		}
+	}
+}

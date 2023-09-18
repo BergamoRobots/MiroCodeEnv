@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="dia_rail">
+    <static>true</static>
+    <link name="link">
+      <collision name="rail-1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>3.5 0.15 0.25</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="rail-visual-1">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>3.5 0.15 0.25</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://dia_rail/materials/scripts</uri>
+            <uri>model://dia_rail/materials/textures</uri>
+            <name>dia_rail/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

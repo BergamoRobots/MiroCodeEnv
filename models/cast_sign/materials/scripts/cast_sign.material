@@ -1,0 +1,14 @@
+material CastSign/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture CastSign_Diffuse.png
+      }
+    }
+  }
+}

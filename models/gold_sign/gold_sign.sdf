@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="gold_sign">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://gold_sign/meshes/gold_sign.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://gold_sign/meshes/gold_sign.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://gold_sign/materials/scripts</uri>
+            <uri>model://gold_sign/materials/textures</uri>
+            <name>GoldSign/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

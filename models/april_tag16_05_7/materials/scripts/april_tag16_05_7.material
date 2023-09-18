@@ -1,0 +1,18 @@
+material april_tag16_05_7/Diffuse
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture april_tag16_05_7.png
+				filtering anistropic
+				max_anisotropy 8
+				scale 1 1
+				rotate 90
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+material dia_panel_short/Diffuse
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture birch_plywood_square.jpg
+				filtering anistropic
+				max_anisotropy 8
+				scale 1 1
+			}
+		}
+	}
+}

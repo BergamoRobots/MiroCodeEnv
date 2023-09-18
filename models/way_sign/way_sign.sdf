@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="way_sign">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://way_sign/meshes/way_sign.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://way_sign/meshes/way_sign.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://way_sign/materials/scripts</uri>
+            <uri>model://way_sign/materials/textures</uri>
+            <name>WaySign/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
