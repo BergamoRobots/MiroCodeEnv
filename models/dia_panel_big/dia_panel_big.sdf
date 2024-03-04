@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="dia_panel_big">
+    <static>true</static>
+    <link name="link">
+      <collision name="surface">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.68 0.364 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="surface">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.68 0.364 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://dia_panel_big/materials/scripts</uri>
+            <uri>model://dia_panel_big/materials/textures</uri>
+            <name>dia_panel_big/Diffuse</name>
+          </script>
+        </material>        
+      </visual>
+    </link>
+  </model>
+</sdf>

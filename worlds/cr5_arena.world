@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<sdf version='1.5'>
+	<world name='default'>
+
+		<physics name='default_physics' default='0' type='ode'>
+			<max_step_size>0.001</max_step_size>
+			<real_time_factor>1</real_time_factor>
+			<real_time_update_rate>1000</real_time_update_rate>
+		</physics>
+
+		<scene>
+			<ambient>0.4 0.4 0.4 1</ambient>
+			<background>0.7 0.7 0.7 1</background>
+			<shadows>0</shadows>
+			<grid>0</grid>
+		</scene>
+
+		<light name='sun' type='directional'>
+			<cast_shadows>0</cast_shadows>
+			<pose frame=''>0 -100 10 0 -0 0</pose>
+			<diffuse>0.8 0.8 0.8 1</diffuse>
+			<specular>0.1 0.1 0.1 1</specular>
+			<attenuation>
+				<range>1000</range>
+				<constant>0.9</constant>
+				<linear>0.01</linear>
+				<quadratic>0.001</quadratic>
+			</attenuation>
+			<direction>-0.5 0.5 -1</direction>
+		</light>
+
+		<include>
+			<uri>model://miro_model</uri>
+			<pose>3.3 0.08 0 0 0 1.57</pose>
+		</include>
+
+		<include>
+			<uri>model://ground_plane</uri>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+
+		<include>
+			<name>arena</name>
+			<uri>model://dia_cr5_arena</uri>
+			<pose>0 0 0 0 0 0</pose>
+		</include>
+
+
+				<!-- External Walls -->
+
+		<include>
+			<name>panel-1n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>0.05 -0.26 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-2n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>0.62 -0.24 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-3n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>1.19 -0.26 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-4n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>1.76 -0.24 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-5n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>2.3 -0.26 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-6n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>2.87 -0.24 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-7n</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.44 -0.26 0.17 1.57 0 0</pose>
+		</include>
+
+		<include>
+			<name>panel-1e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.26 0.05 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-2e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.24 0.62 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-3e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.26 1.19 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-4e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.24 1.76 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-5e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.26 2.3 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-6e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.24 2.87 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-7e</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>-0.26 3.44 0.17 1.57 0 1.57</pose>
+		</include>
+
+		<include>
+			<name>panel-1s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>0.05 3.76 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-2s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>0.62 3.74 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-3s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>1.19 3.76 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-4s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>1.76 3.74 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-5s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>2.3 3.76 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-6s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>2.87 3.74 0.17 1.57 0 0</pose>
+		</include>
+		<include>
+			<name>panel-7s</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.44 3.76 0.17 1.57 0 0</pose>
+		</include>
+
+		<include>
+			<name>panel-1w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.76 0.05 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-2w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.74 0.62 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-3w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.76 1.19 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-4w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.74 1.76 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-5w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.76 2.3 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-6w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.74 2.87 0.17 1.57 0 1.57</pose>
+		</include>
+		<include>
+			<name>panel-7w</name>
+			<uri>model://dia_panel_big</uri>
+			<pose>3.76 3.44 0.17 1.57 0 1.57</pose>
+		</include>
+
+		<gravity>0 0 -9.8</gravity>
+		<magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+		<atmosphere type='adiabatic'/>
+
+		<spherical_coordinates>
+			<surface_model>EARTH_WGS84</surface_model>
+			<latitude_deg>0</latitude_deg>
+			<longitude_deg>0</longitude_deg>
+			<elevation>0</elevation>
+			<heading_deg>0</heading_deg>
+		</spherical_coordinates>
+
+		<gui fullscreen='0'>
+			<camera name='user_camera'>
+				 <pose>1.7 -4. 4. 0 0.6 1.57</pose>
+				<view_controller>orbit</view_controller>
+				<projection_type>perspective</projection_type>
+			</camera>
+		</gui>
+
+	</world>
+</sdf>
