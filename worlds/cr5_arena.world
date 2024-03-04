@@ -31,7 +31,7 @@
 
 		<include>
 			<uri>model://miro_model</uri>
-			<pose>3.3 0.08 0 0 0 1.57</pose>
+			<pose>3 3 0 0 0 1.57</pose>
 		</include>
 
 		<include>
